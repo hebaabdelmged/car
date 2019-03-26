@@ -149,11 +149,47 @@ def draw():
     glutWireCube(6)
 
     glLoadIdentity()
+    glColor3f(0.9 ,1 , 0)
+    glTranslate(step,0,6)
+    glTranslate(3.001,2.5*0.09,-6*0.1)
+    glScale(0.009,0.09,0.1)
+    glutSolidCube(5)
+
+    glLoadIdentity()
+    glColor3f(0.9 ,1 , 0)
+    glTranslate(step,0,6)
+    glTranslate(3.001,2.5*0.09,6*0.1)
+    glScale(0.009,0.09,0.1)
+    glutSolidCube(5)
+
+
+    glLoadIdentity()
     glColor3f(0.2,0.0,0.4)
     glTranslate(step, 6*0.25, 6.0)
     glScale(0.5,0.25,0.5)
     glutSolidCube(6)
 
+    glLoadIdentity()
+    glColor3f(0.7 ,0.7 , 0.6)
+    glTranslate(step, 6*0.25, 6.0)
+    glTranslate(1.501,0,0)
+    glScale(0.005,0.25,0.5)
+    glutSolidCube(5)
+
+    glLoadIdentity()
+    glColor3f(0.7 ,0.7 , 0.6)
+    glTranslate(step, 6*0.25, 6.0)
+    glTranslate(0.75,0,1.501)
+    glScale(0.25,0.25,0.005)
+    glutSolidCube(5)
+
+    glLoadIdentity()
+    glColor3f(0.7 ,0.7 , 0.6)
+    glTranslate(step, 6*0.25, 6.0)
+    glTranslate(-0.75,0,1.501)
+    glScale(0.25,0.25,0.005)
+    glutSolidCube(5)
+    
     glLoadIdentity()
     glColor3f(0,0,0)
     glTranslate(step, 6*0.25, 6.0)
@@ -191,8 +227,6 @@ def draw():
         step-=0.05
         if step<-6:
             forward=True
-              
-       
     
     glutSwapBuffers()
     
