@@ -15,6 +15,7 @@ def draw_circle(r=0.5,xc=0,yc=0):
             y=yc+r*sin(theta)
             glVertex(x,y)
       glEnd() 
+      
 
 def myInit():
     glMatrixMode(GL_PROJECTION)
